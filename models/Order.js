@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 
 const OrdreSchema = new mongoose.Schema({
 
-    // service_type: {
-    //     type: String,
-    //     required: true
-    // },
+    service_type: {
+        type: String,
+        required: true
+    },
     schedule_date: {
         type: String,
         required: true
@@ -29,6 +29,10 @@ const OrdreSchema = new mongoose.Schema({
     payment: {
         type: String,
         required: true,
+    },
+    qty: {
+        type: String,
+        required: true
     },
     payment_mode: {
         type: String,
